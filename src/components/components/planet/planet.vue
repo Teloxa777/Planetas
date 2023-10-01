@@ -1,7 +1,7 @@
 <template>
     <div class="grid grid-cols-3 gap-6 px-12">
         <section class="col-span-2 flex justify-center">
-            <img class="h-[600px]" :src="require('@/assets/planets/' + planet.id + '.svg')" alt="Planeta">
+            <img class="h-[600px]" :src="import('@/assets/planets/' + planet.id + '.svg')" alt="Planeta">
 
         </section>
         <section class="flex flex-col justify-center gap-6 text-white ">
