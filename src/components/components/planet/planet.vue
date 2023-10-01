@@ -1,16 +1,15 @@
 <template>
     <div class="grid grid-cols-3 gap-6 px-12">
         <section class="col-span-2 flex justify-center">
-            <img class="h-[600px]" :src="`src/assets/planets/${planet.id}.svg`" alt="Planeta">
+            <img class="h-[600px]" :src="planetImage" alt="Planeta">
         </section>
-        <section class="flex flex-col justify-center gap-6 text-white ">
+        <section class="flex flex-col justify-center gap-6 text-white">
             <h1 class="font-medium text-4xl">{{planet.nombre}}</h1>
             <p>{{planet.resumen}}</p>
-            <label for="">
+            <label>
                 <samp>Source: </samp>
-                
                 <a href="#">Wikipedia</a>
-                <img class="w-6 h6" src="@/assets/icons/arrow-top-right-on-square.svg" alt="">
+                <img class="w-6 h-6" :src="arrowImage" alt="">
             </label>
 
             <Button @onClick="value = false" :class="[!value ? 'bg-purple': '']">
@@ -36,23 +35,23 @@
     v-if="value"
     :data="planet.data"
     />
-
-    
 </template>
 
-
 <script setup>
-import Button from'../Button/Button.vue' 
-
-import Data from '../Description/Data.vue'
-import Caracteristicas from '../Description/Caracteristicas.vue'
+import Button from '../Button/Button.vue';
+import Data from '../Description/Data.vue';
+import Caracteristicas from '../Description/Caracteristicas.vue';
 import { ref } from 'vue';
 
-const value = ref(false)
+const value = ref(false);
+
+const planetImage = require('@/assets/planets/' + planet.id + '.svg').default;
+const arrowImage = require('@/assets/icons/arrow-top-right-on-square.svg').default;
 
 defineProps({
-    planet: Object
-
-})
+    planet: Object,
+    planetImage,
+    arrowImage,
+});
 
 </script>
