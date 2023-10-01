@@ -33,7 +33,7 @@ module.exports = {
         '#app':{
           "@apply min-h-screen w-full px-10 py-3":{},
           "@apply font-custom":{},
-            "@apply bg-[url('./src/assets/dots.svg')] bg-no-repeat bg-cover":{},
+          "@apply bg-[url('/src/assets/dots.svg')] bg-no-repeat bg-cover": {},
         }
       })
     })
