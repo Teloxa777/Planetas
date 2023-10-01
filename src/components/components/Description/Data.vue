@@ -1,7 +1,4 @@
 
-import data from '../../../utilities/data';
-
-import data from '../../../utilities/data';
 <template>
     <div class="grid grid-cols-3 gap-6 px-12 h-40 text-white">
         <section class="border-2 border-purple rounded-lg p-4 flex-col gap-3">
