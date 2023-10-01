@@ -49,8 +49,8 @@
     planet: Object
   })
   
-  // Rutas de las imágenes utilizando la gestión de activos estáticos
-  const planetImage = '/assets/planets/' + planet.id + '.svg'
-  const arrowImage = '/assets/icons/arrow-top-right-on-square.svg'
+  // Definimos las rutas de las imágenes y el icono
+  const planetImage = `/assets/planets/${planet.id}.svg`
+  const arrowImage = `/assets/icons/arrow-top-right-on-square.svg`
   </script>
   
