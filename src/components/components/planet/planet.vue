@@ -45,7 +45,7 @@
 import Button from'../Button/Button.vue' 
 
 import Data from '../Description/Data.vue'
-import Caracteristicas from '../Description/Data.vue';
+import Caracteristicas from '../Description/Caracteristicas.vue';
 
 
 import { ref } from 'vue';
