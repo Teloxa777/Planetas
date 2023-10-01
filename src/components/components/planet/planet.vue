@@ -1,7 +1,7 @@
 <template>
     <div class="grid grid-cols-3 gap-6 px-12">
         <section class="col-span-2 flex justify-center">
-            <img class="h-[600px]" :src="`@/assets/planets/${planet.id}.svg`" alt="Planeta">
+            <img class="h-[600px]" :src="`src/assets/planets/${planet.id}.svg`" alt="Planeta">
         </section>
         <section class="flex flex-col justify-center gap-6 text-white ">
             <h1 class="font-medium text-4xl">{{planet.nombre}}</h1>
@@ -45,7 +45,9 @@
 import Button from'../Button/Button.vue' 
 
 import Data from '../Description/Data.vue'
-import Caracteristicas from '../Description/Caracteristicas.vue'
+import Caracteristicas from '../Description/Data.vue';
+
+
 import { ref } from 'vue';
 
 const value = ref(false)
